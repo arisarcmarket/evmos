@@ -1,0 +1,12 @@
+{
+  "repoType": "github",
+  "repoDetails": {
+    "login": "arisarcmarket",
+    "repo": "evmos",
+    "branch": "master"
+  },
+  "name": "basic",
+  "description": "",
+  "version": "1.0.0",
+  "projectId": "7"
+}
