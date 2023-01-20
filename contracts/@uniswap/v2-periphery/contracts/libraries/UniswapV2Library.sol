@@ -13,7 +13,7 @@ library UniswapV2Library {
 
 	function pairFor(address factory, address tokenA, address tokenB) internal pure returns(address pair) {
 		(address token0, address token1) = sortTokens(tokenA, tokenB);
-		pair = address(uint(keccak256(abi.encodePacked(hex'0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2', factory, keccak256(abi.encodePacked(token0, token1)), hex'0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2'))));
+		pair = address(uint(keccak256(abi.encodePacked(hexLiteral, factory, keccak256(abi.encodePacked(token0, token1)), hexLiteral))));
 	}
 
 	function getReserves(address factory, address tokenA, address tokenB) internal view returns(uint reserveA, uint reserveB) {
